@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Poppins', sans-serif;  */
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Heebo', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Jost', sans-serif;  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.7s;
+    font-family: 'Jost', sans-serif;
+}
+
+:root {
+    --color: #ffcc29;
+    --gray: #b1b3b4;
+    --black: #141b1f;
+    --white: rgb(255, 255, 255);
+
+}
+
+
+
+header {
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../Images/Photos/60.jpeg);
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.about-section {
+    width: 100%;
+    height: auto;
+
+}
+
+
+.about-boxs-1 {
+    width: 47%;
+    height: 47%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid var(--color);
+
+}
+
+.about-boxs-2 {
+    width: 47%;
+    height: 47%;
+    z-index: 1;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--black);
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.about-boxs-3 {
+    width: 47%;
+    height: 47%;
+    z-index: 1;
+    position: absolute;
+    bottom: 3%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    color: var(--color);
+    border: 2px solid var(--color);
+    left: 2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.about-section .counts {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+
+.about-boxs-3 .caption {
+    color: var(--white);
+}
+
+
+.about-boxs-2 .caption {
+    color: var(--white);
+}
+
+
+
+.about-boxs-4 {
+    width: 47%;
+    height: 47%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    border: 2px solid var(--color);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+}
+
+.about-boxs-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-boxs-4 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.owl-item blockquote{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:320px) {
+
+}
+
+@media screen and (min-width:321px) and (max-width:425px) {}
+
+@media screen and (min-width:426px) and (max-width:600px) {}
+
+@media screen and (min-width:601px) and (max-width:767px) {}
+
+@media screen and (min-width:768px) and (max-width:900px) {}
+
+@media screen and (min-width:901px) and (max-width:991px) {}
+
+@media screen and (min-width:992px) and (max-width:1024px) {}
+
+@media screen and (min-width:1025px) and (max-width:1140px) {}
+
+
+@media screen and (min-width:1140px) and (max-width:1240px) {}

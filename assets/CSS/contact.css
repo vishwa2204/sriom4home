@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Poppins', sans-serif;  */
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Heebo', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Jost', sans-serif;  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.7s;
+    font-family: 'Jost', sans-serif;
+}
+
+:root {
+    --color: #ffcc29;
+    --gray: #b1b3b4;
+    --black: #141b1f;
+    --white: rgb(255, 255, 255);
+
+}
+
+
+
+header {
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../Images/Photos/65.jpeg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    margin-bottom: 5%;
+}
+
+.header-content{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    transform: translate(0,-50%);
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    z-index: 1;
+    flex-direction: column;
+}
+
+.header-content h1 span{
+    color: var(--color);
+    
+}
+
+.header-anchor{
+    width: 100%;
+}
+
+.header-anchor a{
+    color: var(--color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.header-dot{
+    font-size: 20px;
+    
+}
+
+/*  <!--///////////////////// contact Form section Start //////////////// --> */
+
+.contact-form-section{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    background-image: url(../Images/Png/dots2.png);
+    overflow: hidden;
+    padding: 2%;
+}
+
+.contact-title{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+
+.contact-title span {
+    background-color: var(--color);
+    color: var(--black);
+    padding: 0.3% 1%;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.contact-title h2 {
+    color: var(--black);
+    font-weight: 700;
+}
+.contact-title p {
+    color: var(--black);
+    font-weight: 500;
+}
+
+
+.contact-form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-form .form-container{
+    width: 47%;
+    height: auto;
+
+}
+
+.contact-form .form-container form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    padding: 1%;
+}
+
+
+.contact-form .form-container form input{
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 3%;
+    
+}
+
+.contact-form .form-container form textarea{
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+.contact-form .form-container form button{
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 3%;
+    background-color: var(--color);
+    border: 3px solid var(--color);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+    
+}
+
+.contact-form .form-container form button:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.contact-form .form-container img{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.contact-address .howItWorks-content .howItWorks-boxs {
+    width: 30%;
+    height: 230px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+    align-items: center;
+}
+
+.contact-address .howItWorks-content .howItWorks-boxs h5{
+    color: var(--gray);
+}
+
+.contact-address .howItWorks-content .howItWorks-boxs a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.contact-address .howItWorks-content .howItWorks-boxs a:hover{
+    color: var(--color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:320px) {
+    .header-content{
+        width: 90%;
+        height: 100%;
+        position: absolute;
+        left: 5%;
+        top: 55%;
+        transform: translate(0,-50%);
+        display: flex;
+        justify-content: center;
+        color: var(--white);
+        z-index: 1;
+        flex-direction: column;
+    }
+    
+    .contact-form{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .contact-form .form-container{
+        width: 100%;
+        height: auto;
+    
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:425px){
+    .header-content{
+        width: 90%;
+        height: 100%;
+        position: absolute;
+        left: 5%;
+        top: 55%;
+        transform: translate(0,-50%);
+        display: flex;
+        justify-content: center;
+        color: var(--white);
+        z-index: 1;
+        flex-direction: column;
+    }
+    .contact-form{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .contact-form .form-container{
+        width: 100%;
+        height: auto;
+    
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:600px){
+    .header-content{
+        width: 90%;
+        height: 100%;
+        position: absolute;
+        left: 5%;
+        top: 55%;
+        transform: translate(0,-50%);
+        display: flex;
+        justify-content: center;
+        color: var(--white);
+        z-index: 1;
+        flex-direction: column;
+    }
+    .contact-form{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .contact-form .form-container{
+        width: 100%;
+        height: auto;
+    
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:767px){
+    
+}
+
+@media screen and (min-width:768px) and (max-width:900px){
+    
+}
+
+@media screen and (min-width:901px) and (max-width:991px){
+    
+}
+
+@media screen and (min-width:992px) and (max-width:1024px){
+    
+}
+
+@media screen and (min-width:1025px) and (max-width:1140px){
+    
+}
+
+
+@media screen and (min-width:1140px) and (max-width:1240px){
+    
+}
