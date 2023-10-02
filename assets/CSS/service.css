@@ -36,15 +36,6 @@ header {
     margin-bottom: 5%;
 }
 
-
-.nav-link{
-    color: var(--color) !important;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-
 .service-section{
     width: 100%;
     height: auto;

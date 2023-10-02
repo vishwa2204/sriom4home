@@ -62,7 +62,7 @@ p {
     transition: all 0.3s ease-out 0s !important;
     width: 100% !important;
     z-index: 200;
-    background-color: rgba(0, 0, 0, 0.300);
+    background-color: #ffffff43;
     border-bottom: 1px solid var(--color);
     min-height: 80px;
 
@@ -77,6 +77,10 @@ p {
 .navbar-toggler {
     border: 0 !important;
 }
+
+/* .tel{
+    background-color: var(--color);
+} */
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -144,7 +148,6 @@ p {
 .navbar-brand {
     width: 7%;
     height: 90px !important;
-    background-color: var(--white);
 
 }
 
@@ -160,15 +163,127 @@ p {
 
 .offcanvas {
     background: rgba(0, 0, 0, 0.72) !important;
-
     border: 1px solid var(--color);
 }
 
 .nav-link {
-    color: var(--color) !important;
+    color: var(--black) !important;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
+    box-sizing: border-box;
+}
+
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item .nav-link::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+
+}
+
+
+.nav-item .nav-link:hover:before {
+    height: 100%;
+    width: 100%;
+    border: 3px solid var(--color);
+    border-top: none;
+    border-right: none;
+    transition: width 0.3s linear,
+        height 0.3s linear 0.3s;
+}
+
+
+.nav-item .nav-link::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    right: 0;
+    top: 0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+
+}
+
+
+.nav-item .nav-link:hover:after {
+    height: 100%;
+    width: 100%;
+    border: 3px solid var(--color);
+    border-bottom: none;
+    border-left: none;
+    transition: width 0.3s linear,
+        height 0.3s linear 0.3s;
+}
+
+.nav-item .active {
+    border: none;
+    box-sizing: border-box;
+}
+
+
+.nav-item .active::before {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 50%;
+    border: 3px solid var(--color);
+    bottom: 0 !important;
+    left: 0;
+    border-top: none;
+    border-right: none;
+
+}
+
+
+.nav-item .active::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 50%;
+    border: 3px solid var(--color);
+    top: 0;
+    right: 0;
+    border-bottom: none;
+    border-left: none;
+
+}
+
+
+@media screen and (max-width:991px) {
+    .nav-item .nav-link:hover:before {
+        border: none !important;
+    }
+
+
+    .nav-item .nav-link:hover:after {
+
+        border: none;
+
+    }
+
+    .nav-item .active::before{
+        border: none;
+    }
+
+    .nav-item .active::after{
+        border: none;
+    }
+}
+
+.navbar ul li a i{
+    filter: drop-shadow(0 0 px var(--black));
+    color: var(--color);
 }
 
 .offcanvas a {
@@ -177,8 +292,7 @@ p {
 }
 
 .nav-background {
-    background-color: var(--black) !important;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: var(--white);
 }
 
 header {
@@ -1051,6 +1165,26 @@ footer p {
 .footer .footer-boxs {
     width: 20%;
     height: auto;
+
+}
+
+.footer .footer-boxs:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer-boxs:nth-child(1) p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.footer-logo {
+    background-color: var(--white);
+}
+
+.footer .footer-boxs .footer-social {
+    width: 100%;
 }
 
 .footer .footer-boxs h4 {
@@ -1058,7 +1192,7 @@ footer p {
     margin-bottom: 9%;
 }
 
-.footer .footer-boxs h6 {
+.footer .footer-boxs .footer .footer-boxs h6 {
     color: var(--color);
     border-bottom: 1px solid var(--c2);
 
@@ -1112,7 +1246,7 @@ footer p {
 }
 
 .footer .footer-boxs .footer-logo {
-    width: 30%;
+    width: 40%;
 
 }
 
@@ -2672,6 +2806,7 @@ footer p {
     .navbar-brand {
         width: 8%;
     }
+
     .carousel .carousel-inner .carousel-item .carousel-caption {
         position: absolute;
         z-index: 5;
@@ -3053,7 +3188,7 @@ footer p {
 }
 
 @media screen and (min-width:1281px) {
-    .navbar-brand{
+    .navbar-brand {
         width: 6%;
     }
 }
