@@ -146,8 +146,10 @@ p {
 /* navbar-brand  */
 
 .navbar-brand {
-    width: 7%;
+    width: auto;
     height: 90px !important;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -159,6 +161,14 @@ p {
     height: 100% !important;
     width: 100%;
 
+}
+
+.sriOm{
+    color: var(--color);
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .offcanvas {
@@ -293,6 +303,10 @@ p {
 
 .nav-background {
     background-color: var(--white);
+}
+
+.nav-background .sriOm{
+    color: var(--black);
 }
 
 header {
